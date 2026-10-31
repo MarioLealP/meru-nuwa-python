@@ -1,0 +1,10 @@
+# Gitea template expansion (Meru/nuwa-python -> a new app's repo): $REPO_NAME and friends are replaced in these files
+# and paths; anything else with a $ is left as it is. Gitea removes this file from the generated repo.
+src/**
+tests/**
+deploy/values.yaml
+.gitea/workflows/ci.yaml
+pyproject.toml
+uv.lock
+Dockerfile
+README.md
