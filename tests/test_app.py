@@ -1,9 +1,11 @@
-from fastapi.testclient import TestClient
+import httpx2
 
 from $REPO_NAME_SNAKE.app import app
 
 
-def test_heartbeat():
-    response = TestClient(app).get("/heartbeat")
+async def test_heartbeat():
+    transport = httpx2.ASGITransport(app=app)
+    async with httpx2.AsyncClient(transport=transport, base_url="http://app") as http:
+        response = await http.get("/heartbeat")
     assert response.status_code == 200
     assert response.text == "ok"
