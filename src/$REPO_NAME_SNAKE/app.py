@@ -1,4 +1,4 @@
-"""$REPO_NAME: $REPO_DESCRIPTION"""
+"""The $REPO_NAME app."""
 
 from fastapi import FastAPI
 from fastapi.responses import PlainTextResponse
