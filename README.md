@@ -9,7 +9,7 @@ with one endpoint, `GET /heartbeat` -> `ok`, to grow from.
 
 ```sh
 uv sync
-uv run uvicorn --app-dir src $REPO_NAME_SNAKE.app:app --port 8080
+uv run uvicorn --app-dir src $REPO_NAME_SNAKE.api.app:app --port 8080
 curl localhost:8080/heartbeat
 ```
 

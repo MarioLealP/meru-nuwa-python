@@ -1,6 +1,6 @@
 import httpx2
 
-from $REPO_NAME_SNAKE.app import app
+from $REPO_NAME_SNAKE.api.app import app
 
 
 async def test_heartbeat():
