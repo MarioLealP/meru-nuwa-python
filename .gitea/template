@@ -3,7 +3,6 @@
 src/**
 tests/**
 deploy/values.yaml
-.gitea/workflows/ci.yaml
 pyproject.toml
 uv.lock
 Dockerfile
