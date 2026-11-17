@@ -8,6 +8,7 @@
 name: ci
 on:
   pull_request:
+    paths-ignore: [deploy/**] # a values-only PR builds nothing
   push:
     branches: [main]
     paths-ignore: [deploy/**]
